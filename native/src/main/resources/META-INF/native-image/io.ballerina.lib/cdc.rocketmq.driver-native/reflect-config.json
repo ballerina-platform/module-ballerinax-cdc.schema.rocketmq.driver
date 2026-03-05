@@ -1,0 +1,6 @@
+[
+{
+  "name":"io.debezium.storage.rocketmq.history.RocketMqSchemaHistory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+}
+]

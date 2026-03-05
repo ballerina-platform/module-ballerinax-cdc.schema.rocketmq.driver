@@ -1,0 +1,347 @@
+[package]
+org = "ballerinax"
+name = "cdc.rocketmq.driver"
+version = "@toml.version@"
+distribution = "2201.12.0"
+authors = ["Ballerina"]
+repository = "https://github.com/ballerina-platform/module-ballerinax-cdc.rocketmq.driver"
+license = ["Apache-2.0"]
+
+[platform.java21]
+graalvmCompatible = true
+
+[[platform.java21.dependency]]
+groupId = "io.ballerina.lib"
+artifactId = "cdc.rocketmq.driver-native"
+version = "@toml.version@"
+path = "../native/build/libs/cdc.rocketmq.driver-native-@project.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.debezium"
+artifactId = "debezium-storage-rocketmq"
+version = "@debezium.version@"
+path = "./lib/debezium-storage-rocketmq-@debezium.version@.jar"
+
+# RocketMQ client libraries
+[[platform.java21.dependency]]
+groupId = "org.apache.rocketmq"
+artifactId = "rocketmq-client"
+version = "@rocketmq.version@"
+path = "./lib/rocketmq-client-@rocketmq.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.apache.rocketmq"
+artifactId = "rocketmq-acl"
+version = "@rocketmq.version@"
+path = "./lib/rocketmq-acl-@rocketmq.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.apache.rocketmq"
+artifactId = "rocketmq-common"
+version = "@rocketmq.version@"
+path = "./lib/rocketmq-common-@rocketmq.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.apache.rocketmq"
+artifactId = "rocketmq-remoting"
+version = "@rocketmq.version@"
+path = "./lib/rocketmq-remoting-@rocketmq.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.apache.rocketmq"
+artifactId = "rocketmq-srvutil"
+version = "@rocketmq.version@"
+path = "./lib/rocketmq-srvutil-@rocketmq.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.apache.rocketmq"
+artifactId = "rocketmq-tools"
+version = "@rocketmq.version@"
+path = "./lib/rocketmq-tools-@rocketmq.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.apache.rocketmq"
+artifactId = "rocketmq-proto"
+version = "@rocketmq.proto.version@"
+path = "./lib/rocketmq-proto-@rocketmq.proto.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.github.aliyunmq"
+artifactId = "rocketmq-slf4j-api"
+version = "@rocketmq.logging.version@"
+path = "./lib/rocketmq-slf4j-api-@rocketmq.logging.version@.jar"
+
+# rocketmq-logback-classic shades logback internally via class relocation.
+# No external logback JAR is required at runtime.
+[[platform.java21.dependency]]
+groupId = "io.github.aliyunmq"
+artifactId = "rocketmq-logback-classic"
+version = "@rocketmq.logging.version@"
+path = "./lib/rocketmq-logback-classic-@rocketmq.logging.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.github.aliyunmq"
+artifactId = "rocketmq-rocksdb"
+version = "@rocketmq.rocksdb.version@"
+path = "./lib/rocketmq-rocksdb-@rocketmq.rocksdb.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "com.alibaba"
+artifactId = "fastjson"
+version = "@fastjson.version@"
+path = "./lib/fastjson-@fastjson.version@.jar"
+
+# Commons utilities (commons-beanutils, commons-collections, gson omitted — present in BRE 2201.12.0)
+[[platform.java21.dependency]]
+groupId = "org.apache.commons"
+artifactId = "commons-lang3"
+version = "@commons.lang3.version@"
+path = "./lib/commons-lang3-@commons.lang3.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "commons-cli"
+artifactId = "commons-cli"
+version = "@commons.cli.version@"
+path = "./lib/commons-cli-@commons.cli.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "commons-validator"
+artifactId = "commons-validator"
+version = "@commons.validator.version@"
+path = "./lib/commons-validator-@commons.validator.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "commons-digester"
+artifactId = "commons-digester"
+version = "@commons.digester.version@"
+path = "./lib/commons-digester-@commons.digester.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "com.googlecode.concurrentlinkedhashmap"
+artifactId = "concurrentlinkedhashmap-lru"
+version = "@concurrentlinkedhashmap.version@"
+path = "./lib/concurrentlinkedhashmap-lru-@concurrentlinkedhashmap.version@.jar"
+
+# Compression
+[[platform.java21.dependency]]
+groupId = "com.github.luben"
+artifactId = "zstd-jni"
+version = "@zstd.jni.version@"
+path = "./lib/zstd-jni-@zstd.jni.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.lz4"
+artifactId = "lz4-java"
+version = "@lz4.version@"
+path = "./lib/lz4-java-@lz4.version@.jar"
+
+# gRPC (used by rocketmq-client 5.x gRPC transport mode)
+[[platform.java21.dependency]]
+groupId = "io.grpc"
+artifactId = "grpc-api"
+version = "@grpc.version@"
+path = "./lib/grpc-api-@grpc.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.grpc"
+artifactId = "grpc-context"
+version = "@grpc.version@"
+path = "./lib/grpc-context-@grpc.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.grpc"
+artifactId = "grpc-core"
+version = "@grpc.version@"
+path = "./lib/grpc-core-@grpc.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.grpc"
+artifactId = "grpc-stub"
+version = "@grpc.version@"
+path = "./lib/grpc-stub-@grpc.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.grpc"
+artifactId = "grpc-netty-shaded"
+version = "@grpc.version@"
+path = "./lib/grpc-netty-shaded-@grpc.version@.jar"
+
+# Protobuf
+[[platform.java21.dependency]]
+groupId = "com.google.protobuf"
+artifactId = "protobuf-java"
+version = "@protobuf.version@"
+path = "./lib/protobuf-java-@protobuf.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "com.google.protobuf"
+artifactId = "protobuf-java-util"
+version = "@protobuf.version@"
+path = "./lib/protobuf-java-util-@protobuf.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.apache.tomcat"
+artifactId = "annotations-api"
+version = "@tomcat.annotations.version@"
+path = "./lib/annotations-api-@tomcat.annotations.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "com.google.guava"
+artifactId = "guava"
+version = "@guava.version@"
+path = "./lib/guava-@guava.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "com.google.guava"
+artifactId = "failureaccess"
+version = "@failureaccess.version@"
+path = "./lib/failureaccess-@failureaccess.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.perfmark"
+artifactId = "perfmark-api"
+version = "@perfmark.version@"
+path = "./lib/perfmark-api-@perfmark.version@.jar"
+
+# OpenTelemetry (pulled in by rocketmq-client 5.x for metrics/tracing)
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-api"
+version = "@otel.version@"
+path = "./lib/opentelemetry-api-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-context"
+version = "@otel.version@"
+path = "./lib/opentelemetry-context-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-sdk"
+version = "@otel.version@"
+path = "./lib/opentelemetry-sdk-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-sdk-common"
+version = "@otel.version@"
+path = "./lib/opentelemetry-sdk-common-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-sdk-trace"
+version = "@otel.version@"
+path = "./lib/opentelemetry-sdk-trace-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-sdk-metrics"
+version = "@otel.version@"
+path = "./lib/opentelemetry-sdk-metrics-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-sdk-logs"
+version = "@otel.version@"
+path = "./lib/opentelemetry-sdk-logs-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-exporter-otlp"
+version = "@otel.version@"
+path = "./lib/opentelemetry-exporter-otlp-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-exporter-otlp-common"
+version = "@otel.version@"
+path = "./lib/opentelemetry-exporter-otlp-common-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-exporter-common"
+version = "@otel.version@"
+path = "./lib/opentelemetry-exporter-common-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-exporter-sender-okhttp"
+version = "@otel.version@"
+path = "./lib/opentelemetry-exporter-sender-okhttp-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-exporter-logging"
+version = "@otel.version@"
+path = "./lib/opentelemetry-exporter-logging-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-exporter-logging-otlp"
+version = "@otel.version@"
+path = "./lib/opentelemetry-exporter-logging-otlp-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-sdk-extension-autoconfigure-spi"
+version = "@otel.version@"
+path = "./lib/opentelemetry-sdk-extension-autoconfigure-spi-@otel.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-semconv"
+version = "@otel.alpha.version@"
+path = "./lib/opentelemetry-semconv-@otel.alpha.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-extension-incubator"
+version = "@otel.alpha.version@"
+path = "./lib/opentelemetry-extension-incubator-@otel.alpha.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-api-events"
+version = "@otel.alpha.version@"
+path = "./lib/opentelemetry-api-events-@otel.alpha.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "io.opentelemetry"
+artifactId = "opentelemetry-exporter-prometheus"
+version = "@otel.alpha.version@"
+path = "./lib/opentelemetry-exporter-prometheus-@otel.alpha.version@.jar"
+
+# OkHttp 4.x (BRE has 3.14.0 — incompatible major version, must declare 4.11.0)
+[[platform.java21.dependency]]
+groupId = "com.squareup.okhttp3"
+artifactId = "okhttp"
+version = "@okhttp.version@"
+path = "./lib/okhttp-@okhttp.version@.jar"
+
+# okio-jvm: BRE provides 3.4.0 which satisfies the 3.2.0 requirement — omitted here.
+
+# Kotlin stdlib 1.6.20 (BRE has 1.6.0 — declare 1.6.20 to ensure correct version)
+[[platform.java21.dependency]]
+groupId = "org.jetbrains.kotlin"
+artifactId = "kotlin-stdlib"
+version = "@kotlin.version@"
+path = "./lib/kotlin-stdlib-@kotlin.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.jetbrains.kotlin"
+artifactId = "kotlin-stdlib-jdk7"
+version = "@kotlin.version@"
+path = "./lib/kotlin-stdlib-jdk7-@kotlin.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.jetbrains.kotlin"
+artifactId = "kotlin-stdlib-jdk8"
+version = "@kotlin.version@"
+path = "./lib/kotlin-stdlib-jdk8-@kotlin.version@.jar"
+
+[[platform.java21.dependency]]
+groupId = "org.jetbrains.kotlin"
+artifactId = "kotlin-stdlib-common"
+version = "@kotlin.version@"
+path = "./lib/kotlin-stdlib-common-@kotlin.version@.jar"
