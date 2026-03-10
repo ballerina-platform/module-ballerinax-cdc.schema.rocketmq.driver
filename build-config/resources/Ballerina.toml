@@ -204,17 +204,8 @@ version = "@perfmark.version@"
 path = "./lib/perfmark-api-@perfmark.version@.jar"
 
 # OpenTelemetry (pulled in by rocketmq-client 5.x for metrics/tracing)
-[[platform.java21.dependency]]
-groupId = "io.opentelemetry"
-artifactId = "opentelemetry-api"
-version = "@otel.version@"
-path = "./lib/opentelemetry-api-@otel.version@.jar"
-
-[[platform.java21.dependency]]
-groupId = "io.opentelemetry"
-artifactId = "opentelemetry-context"
-version = "@otel.version@"
-path = "./lib/opentelemetry-context-@otel.version@.jar"
+# opentelemetry-api and opentelemetry-context are omitted — already in BRE (ballerina-rt fat jar @ 1.32.0)
+# The otel SDK at 1.29.0 uses the BRE's 1.32.0 API, which is backward-compatible
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
