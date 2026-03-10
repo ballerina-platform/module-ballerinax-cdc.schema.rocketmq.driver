@@ -254,8 +254,8 @@ subprojects {
 }
 
 tasks.register('build') {
-    dependsOn(':cdc.rocketmq.driver-native:build')
-    dependsOn(':cdc.rocketmq.driver-ballerina:build')
+    dependsOn(':cdc.schema.rocketmq.driver-native:build')
+    dependsOn(':cdc.schema.rocketmq.driver-ballerina:build')
 }
 
 release {

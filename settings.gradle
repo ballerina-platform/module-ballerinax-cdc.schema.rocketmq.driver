@@ -41,13 +41,13 @@ plugins {
     id "com.gradle.enterprise" version "3.2"
 }
 
-rootProject.name = 'module-ballerinax-cdc.rocketmq.driver'
+rootProject.name = 'module-ballerinax-cdc.schema.rocketmq.driver'
 
-include ':cdc.rocketmq.driver-ballerina'
-include ':cdc.rocketmq.driver-native'
+include ':cdc.schema.rocketmq.driver-ballerina'
+include ':cdc.schema.rocketmq.driver-native'
 
-project(':cdc.rocketmq.driver-ballerina').projectDir = file("ballerina")
-project(':cdc.rocketmq.driver-native').projectDir = file("native")
+project(':cdc.schema.rocketmq.driver-ballerina').projectDir = file("ballerina")
+project(':cdc.schema.rocketmq.driver-native').projectDir = file("native")
 
 gradleEnterprise {
     buildScan {
