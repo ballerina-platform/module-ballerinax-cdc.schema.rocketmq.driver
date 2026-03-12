@@ -21,4 +21,4 @@
 // `RocketMQInternalSchemaStorage` configuration option:
 //
 //   import ballerinax/cdc;
-//   import ballerinax/cdc.rocketmq.driver as _;
+//   import ballerinax/cdc.schema.rocketmq.driver as _;
