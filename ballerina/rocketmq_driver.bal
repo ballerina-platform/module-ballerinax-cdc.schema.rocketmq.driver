@@ -13,12 +13,3 @@
 // KIND, either express or implied.  See the License for the
 // specific language governing permissions and limitations
 // under the License.
-
-// This module bundles the Java dependencies required for using Apache RocketMQ as a
-// schema history storage backend with the `ballerinax/cdc` module.
-//
-// Import this module alongside `ballerinax/cdc` to enable the
-// `RocketMQInternalSchemaStorage` configuration option:
-//
-//   import ballerinax/cdc;
-//   import ballerinax/cdc.schema.rocketmq.driver as _;

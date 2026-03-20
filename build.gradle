@@ -23,7 +23,7 @@ plugins {
     id 'net.researchgate.release'
 }
 
-description = 'Ballerina - CDC RocketMQ Driver'
+description = 'Ballerina - CDC Schema RocketMQ Driver'
 
 ext.ballerinaLangVersion = project.ballerinaLangVersion
 
