@@ -177,15 +177,12 @@ subprojects {
         }
 
         // OpenTelemetry (pulled in by rocketmq-client 5.x for observability)
-        // opentelemetry-api and opentelemetry-context are already in BRE (ballerina-rt fat jar @ 1.32.0 > 1.29.0)
+        // opentelemetry-api, opentelemetry-context, and opentelemetry-sdk-trace are already in BRE @ 1.32.0
         // The otel SDK at 1.29.0 uses the BRE's 1.32.0 API, which is backward-compatible
         externalJars(group: 'io.opentelemetry', name: 'opentelemetry-sdk', version: "${otelVersion}") {
             transitive = false
         }
         externalJars(group: 'io.opentelemetry', name: 'opentelemetry-sdk-common', version: "${otelVersion}") {
-            transitive = false
-        }
-        externalJars(group: 'io.opentelemetry', name: 'opentelemetry-sdk-trace', version: "${otelVersion}") {
             transitive = false
         }
         externalJars(group: 'io.opentelemetry', name: 'opentelemetry-sdk-metrics', version: "${otelVersion}") {

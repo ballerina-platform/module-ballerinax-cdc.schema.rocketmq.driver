@@ -220,11 +220,6 @@ artifactId = "opentelemetry-sdk-common"
 version = "@otel.version@"
 path = "./lib/opentelemetry-sdk-common-@otel.version@.jar"
 
-[[platform.java21.dependency]]
-groupId = "io.opentelemetry"
-artifactId = "opentelemetry-sdk-trace"
-version = "@otel.version@"
-path = "./lib/opentelemetry-sdk-trace-@otel.version@.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
