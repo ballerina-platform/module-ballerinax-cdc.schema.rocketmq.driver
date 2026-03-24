@@ -76,8 +76,8 @@ tasks.register('updateTomlFiles') {
         newBallerinaToml = newBallerinaToml.replace("@fastjson.version@", fastjsonVersion)
         newBallerinaToml = newBallerinaToml.replace("@otel.version@", otelVersion)
         newBallerinaToml = newBallerinaToml.replace("@otel.alpha.version@", otelAlphaVersion)
+        newBallerinaToml = newBallerinaToml.replace("@otel.semconv.version@", otelSemconvVersion)
         newBallerinaToml = newBallerinaToml.replace("@okhttp.version@", okhttpVersion)
-        newBallerinaToml = newBallerinaToml.replace("@okio.version@", okioVersion)
         newBallerinaToml = newBallerinaToml.replace("@kotlin.version@", kotlinVersion)
         ballerinaTomlFile.text = newBallerinaToml
     }

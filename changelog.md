@@ -8,5 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Initial release of `ballerinax/cdc.schema.rocketmq.driver` — bundles the required Java drivers for RocketMQ-backed CDC schema history storage.
 
 ### Changed
