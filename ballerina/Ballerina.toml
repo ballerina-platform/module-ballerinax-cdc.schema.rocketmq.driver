@@ -206,74 +206,74 @@ path = "./lib/perfmark-api-0.25.0.jar"
 
 # OpenTelemetry (pulled in by rocketmq-client 5.x for metrics/tracing)
 # opentelemetry-api and opentelemetry-context are omitted — already in BRE (ballerina-rt fat jar @ 1.32.0)
-# The otel SDK at 1.29.0 uses the BRE's 1.32.0 API, which is backward-compatible
+# Bundling SDK at matching 1.32.0 to align with BRE API version
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-sdk"
-version = "1.29.0"
-path = "./lib/opentelemetry-sdk-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-sdk-1.32.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-sdk-common"
-version = "1.29.0"
-path = "./lib/opentelemetry-sdk-common-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-sdk-common-1.32.0.jar"
 
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-sdk-metrics"
-version = "1.29.0"
-path = "./lib/opentelemetry-sdk-metrics-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-sdk-metrics-1.32.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-sdk-logs"
-version = "1.29.0"
-path = "./lib/opentelemetry-sdk-logs-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-sdk-logs-1.32.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-exporter-otlp"
-version = "1.29.0"
-path = "./lib/opentelemetry-exporter-otlp-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-exporter-otlp-1.32.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-exporter-otlp-common"
-version = "1.29.0"
-path = "./lib/opentelemetry-exporter-otlp-common-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-exporter-otlp-common-1.32.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-exporter-common"
-version = "1.29.0"
-path = "./lib/opentelemetry-exporter-common-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-exporter-common-1.32.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-exporter-sender-okhttp"
-version = "1.29.0"
-path = "./lib/opentelemetry-exporter-sender-okhttp-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-exporter-sender-okhttp-1.32.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-exporter-logging"
-version = "1.29.0"
-path = "./lib/opentelemetry-exporter-logging-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-exporter-logging-1.32.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-exporter-logging-otlp"
-version = "1.29.0"
-path = "./lib/opentelemetry-exporter-logging-otlp-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-exporter-logging-otlp-1.32.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-sdk-extension-autoconfigure-spi"
-version = "1.29.0"
-path = "./lib/opentelemetry-sdk-extension-autoconfigure-spi-1.29.0.jar"
+version = "1.32.0"
+path = "./lib/opentelemetry-sdk-extension-autoconfigure-spi-1.32.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
@@ -284,20 +284,20 @@ path = "./lib/opentelemetry-semconv-1.29.0-alpha.jar"
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-extension-incubator"
-version = "1.29.0-alpha"
-path = "./lib/opentelemetry-extension-incubator-1.29.0-alpha.jar"
+version = "1.32.0-alpha"
+path = "./lib/opentelemetry-extension-incubator-1.32.0-alpha.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-api-events"
-version = "1.29.0-alpha"
-path = "./lib/opentelemetry-api-events-1.29.0-alpha.jar"
+version = "1.32.0-alpha"
+path = "./lib/opentelemetry-api-events-1.32.0-alpha.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.opentelemetry"
 artifactId = "opentelemetry-exporter-prometheus"
-version = "1.29.0-alpha"
-path = "./lib/opentelemetry-exporter-prometheus-1.29.0-alpha.jar"
+version = "1.32.0-alpha"
+path = "./lib/opentelemetry-exporter-prometheus-1.32.0-alpha.jar"
 
 # OkHttp 4.x (BRE has 3.14.0 — incompatible major version, must declare 4.11.0)
 [[platform.java21.dependency]]
