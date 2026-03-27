@@ -133,8 +133,8 @@ path = "./lib/zstd-jni-1.5.2-2.jar"
 [[platform.java21.dependency]]
 groupId = "org.lz4"
 artifactId = "lz4-java"
-version = "1.8.1"
-path = "./lib/lz4-java-1.8.1.jar"
+version = "1.8.0"
+path = "./lib/lz4-java-1.8.0.jar"
 
 # gRPC (used by rocketmq-client 5.x gRPC transport mode)
 [[platform.java21.dependency]]
