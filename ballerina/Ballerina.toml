@@ -140,32 +140,32 @@ path = "./lib/lz4-java-1.8.0.jar"
 [[platform.java21.dependency]]
 groupId = "io.grpc"
 artifactId = "grpc-api"
-version = "1.75.0"
-path = "./lib/grpc-api-1.75.0.jar"
+version = "1.76.2"
+path = "./lib/grpc-api-1.76.2.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.grpc"
 artifactId = "grpc-context"
-version = "1.75.0"
-path = "./lib/grpc-context-1.75.0.jar"
+version = "1.76.2"
+path = "./lib/grpc-context-1.76.2.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.grpc"
 artifactId = "grpc-core"
-version = "1.75.0"
-path = "./lib/grpc-core-1.75.0.jar"
+version = "1.76.2"
+path = "./lib/grpc-core-1.76.2.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.grpc"
 artifactId = "grpc-stub"
-version = "1.75.0"
-path = "./lib/grpc-stub-1.75.0.jar"
+version = "1.76.2"
+path = "./lib/grpc-stub-1.76.2.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.grpc"
 artifactId = "grpc-netty-shaded"
-version = "1.75.0"
-path = "./lib/grpc-netty-shaded-1.75.0.jar"
+version = "1.76.2"
+path = "./lib/grpc-netty-shaded-1.76.2.jar"
 
 # Protobuf
 [[platform.java21.dependency]]
