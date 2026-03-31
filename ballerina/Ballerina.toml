@@ -96,8 +96,8 @@ path = "./lib/fastjson-1.2.83.jar"
 [[platform.java21.dependency]]
 groupId = "org.apache.commons"
 artifactId = "commons-lang3"
-version = "3.12.0"
-path = "./lib/commons-lang3-3.12.0.jar"
+version = "3.18.0"
+path = "./lib/commons-lang3-3.18.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "commons-cli"
@@ -131,54 +131,54 @@ version = "1.5.2-2"
 path = "./lib/zstd-jni-1.5.2-2.jar"
 
 [[platform.java21.dependency]]
-groupId = "org.lz4"
+groupId = "at.yawk.lz4"
 artifactId = "lz4-java"
-version = "1.8.0"
-path = "./lib/lz4-java-1.8.0.jar"
+version = "1.8.1"
+path = "./lib/lz4-java-1.8.1.jar"
 
 # gRPC (used by rocketmq-client 5.x gRPC transport mode)
 [[platform.java21.dependency]]
 groupId = "io.grpc"
 artifactId = "grpc-api"
-version = "1.50.0"
-path = "./lib/grpc-api-1.50.0.jar"
+version = "1.76.2"
+path = "./lib/grpc-api-1.76.2.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.grpc"
 artifactId = "grpc-context"
-version = "1.50.0"
-path = "./lib/grpc-context-1.50.0.jar"
+version = "1.76.2"
+path = "./lib/grpc-context-1.76.2.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.grpc"
 artifactId = "grpc-core"
-version = "1.50.0"
-path = "./lib/grpc-core-1.50.0.jar"
+version = "1.76.2"
+path = "./lib/grpc-core-1.76.2.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.grpc"
 artifactId = "grpc-stub"
-version = "1.50.0"
-path = "./lib/grpc-stub-1.50.0.jar"
+version = "1.76.2"
+path = "./lib/grpc-stub-1.76.2.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.grpc"
 artifactId = "grpc-netty-shaded"
-version = "1.50.0"
-path = "./lib/grpc-netty-shaded-1.50.0.jar"
+version = "1.76.2"
+path = "./lib/grpc-netty-shaded-1.76.2.jar"
 
 # Protobuf
 [[platform.java21.dependency]]
 groupId = "com.google.protobuf"
 artifactId = "protobuf-java"
-version = "3.20.1"
-path = "./lib/protobuf-java-3.20.1.jar"
+version = "3.25.8"
+path = "./lib/protobuf-java-3.25.8.jar"
 
 [[platform.java21.dependency]]
 groupId = "com.google.protobuf"
 artifactId = "protobuf-java-util"
-version = "3.20.1"
-path = "./lib/protobuf-java-util-3.20.1.jar"
+version = "3.25.8"
+path = "./lib/protobuf-java-util-3.25.8.jar"
 
 [[platform.java21.dependency]]
 groupId = "org.apache.tomcat"
@@ -189,8 +189,8 @@ path = "./lib/annotations-api-6.0.53.jar"
 [[platform.java21.dependency]]
 groupId = "com.google.guava"
 artifactId = "guava"
-version = "31.1-jre"
-path = "./lib/guava-31.1-jre.jar"
+version = "32.0.1-jre"
+path = "./lib/guava-32.0.1-jre.jar"
 
 [[platform.java21.dependency]]
 groupId = "com.google.guava"
@@ -201,8 +201,8 @@ path = "./lib/failureaccess-1.0.1.jar"
 [[platform.java21.dependency]]
 groupId = "io.perfmark"
 artifactId = "perfmark-api"
-version = "0.25.0"
-path = "./lib/perfmark-api-0.25.0.jar"
+version = "0.27.0"
+path = "./lib/perfmark-api-0.27.0.jar"
 
 # OpenTelemetry (pulled in by rocketmq-client 5.x for metrics/tracing)
 # opentelemetry-api and opentelemetry-context are omitted — already in BRE (ballerina-rt fat jar @ 1.32.0)

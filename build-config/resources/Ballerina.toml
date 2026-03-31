@@ -131,7 +131,7 @@ version = "@zstd.jni.version@"
 path = "./lib/zstd-jni-@zstd.jni.version@.jar"
 
 [[platform.java21.dependency]]
-groupId = "org.lz4"
+groupId = "at.yawk.lz4"
 artifactId = "lz4-java"
 version = "@lz4.version@"
 path = "./lib/lz4-java-@lz4.version@.jar"
