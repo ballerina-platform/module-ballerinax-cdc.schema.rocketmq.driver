@@ -1,7 +1,7 @@
 [package]
 org = "ballerinax"
 name = "cdc.schema.rocketmq.driver"
-version = "1.0.0"
+version = "1.1.0"
 distribution = "2201.12.0"
 authors = ["Ballerina"]
 keywords = ["CDC", "Debezium", "Area/Database", "Type/Driver", "Vendor/Red Hat"]
@@ -14,51 +14,51 @@ graalvmCompatible = true
 [[platform.java21.dependency]]
 groupId = "io.ballerina.lib"
 artifactId = "cdc.schema.rocketmq.driver-native"
-version = "1.0.0"
-path = "../native/build/libs/cdc.schema.rocketmq.driver-native-1.0.0-SNAPSHOT.jar"
+version = "1.1.0"
+path = "../native/build/libs/cdc.schema.rocketmq.driver-native-1.1.0-SNAPSHOT.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.debezium"
 artifactId = "debezium-storage-rocketmq"
-version = "3.0.8.Final"
-path = "./lib/debezium-storage-rocketmq-3.0.8.Final.jar"
+version = "3.5.1.Final"
+path = "./lib/debezium-storage-rocketmq-3.5.1.Final.jar"
 
 # RocketMQ client libraries
 [[platform.java21.dependency]]
 groupId = "org.apache.rocketmq"
 artifactId = "rocketmq-client"
-version = "5.1.4"
-path = "./lib/rocketmq-client-5.1.4.jar"
+version = "5.2.0"
+path = "./lib/rocketmq-client-5.2.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "org.apache.rocketmq"
 artifactId = "rocketmq-acl"
-version = "5.1.4"
-path = "./lib/rocketmq-acl-5.1.4.jar"
+version = "5.2.0"
+path = "./lib/rocketmq-acl-5.2.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "org.apache.rocketmq"
 artifactId = "rocketmq-common"
-version = "5.1.4"
-path = "./lib/rocketmq-common-5.1.4.jar"
+version = "5.2.0"
+path = "./lib/rocketmq-common-5.2.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "org.apache.rocketmq"
 artifactId = "rocketmq-remoting"
-version = "5.1.4"
-path = "./lib/rocketmq-remoting-5.1.4.jar"
+version = "5.2.0"
+path = "./lib/rocketmq-remoting-5.2.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "org.apache.rocketmq"
 artifactId = "rocketmq-srvutil"
-version = "5.1.4"
-path = "./lib/rocketmq-srvutil-5.1.4.jar"
+version = "5.2.0"
+path = "./lib/rocketmq-srvutil-5.2.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "org.apache.rocketmq"
 artifactId = "rocketmq-tools"
-version = "5.1.4"
-path = "./lib/rocketmq-tools-5.1.4.jar"
+version = "5.2.0"
+path = "./lib/rocketmq-tools-5.2.0.jar"
 
 [[platform.java21.dependency]]
 groupId = "org.apache.rocketmq"
