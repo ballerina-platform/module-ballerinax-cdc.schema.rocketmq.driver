@@ -2,7 +2,7 @@
 org = "ballerinax"
 name = "cdc.schema.rocketmq.driver"
 version = "@toml.version@"
-distribution = "2201.13.0"
+distribution = "2201.12.0"
 authors = ["Ballerina"]
 keywords = ["CDC", "Debezium", "Area/Database", "Type/Driver", "Vendor/Red Hat"]
 repository = "https://github.com/ballerina-platform/module-ballerinax-cdc.schema.rocketmq.driver"
@@ -92,7 +92,7 @@ artifactId = "fastjson"
 version = "@fastjson.version@"
 path = "./lib/fastjson-@fastjson.version@.jar"
 
-# Commons utilities (commons-beanutils, commons-collections, gson omitted — present in BRE 2201.13.0)
+# Commons utilities (commons-beanutils, commons-collections, gson omitted — present in BRE 2201.12.0)
 [[platform.java21.dependency]]
 groupId = "org.apache.commons"
 artifactId = "commons-lang3"
