@@ -6,6 +6,8 @@ CVE-2024-12798
 CVE-2025-11226
 CVE-2024-12801
 CVE-2026-1225
+CVE-2026-10532
+CVE-2026-9828
 
 # CVE-2025-66566: lz4-java information disclosure with no fixed version available (status: affected).
 CVE-2025-66566
