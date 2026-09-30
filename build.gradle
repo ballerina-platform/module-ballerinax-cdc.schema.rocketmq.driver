@@ -18,7 +18,7 @@
 
 plugins {
     id 'com.github.spotbugs-base'
-    id 'com.github.johnrengelman.shadow'
+    id 'com.gradleup.shadow'
     id 'de.undercouch.download'
     id 'net.researchgate.release'
 }
@@ -246,9 +246,16 @@ subprojects {
     }
 }
 
-tasks.register('build') {
-    dependsOn(':cdc.schema.rocketmq.driver-native:build')
-    dependsOn(':cdc.schema.rocketmq.driver-ballerina:build')
+if (tasks.names.contains('build')) {
+    tasks.named('build') {
+        dependsOn(':cdc.schema.rocketmq.driver-native:build')
+        dependsOn(':cdc.schema.rocketmq.driver-ballerina:build')
+    }
+} else {
+    tasks.register('build') {
+        dependsOn(':cdc.schema.rocketmq.driver-native:build')
+        dependsOn(':cdc.schema.rocketmq.driver-ballerina:build')
+    }
 }
 
 release {
