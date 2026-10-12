@@ -56,6 +56,7 @@ ballerina {
     module = packageName
     langVersion = ballerinaLangVersion
     connector = true
+    platform = 'java25'
 }
 
 tasks.register('updateTomlFiles') {
@@ -75,6 +76,7 @@ tasks.register('updateTomlFiles') {
         newBallerinaToml = newBallerinaToml.replace("@zstd.jni.version@", zstdJniVersion)
         newBallerinaToml = newBallerinaToml.replace("@lz4.version@", lz4Version)
         newBallerinaToml = newBallerinaToml.replace("@grpc.version@", grpcVersion)
+        newBallerinaToml = newBallerinaToml.replace("@netty.version@", nettyVersion)
         newBallerinaToml = newBallerinaToml.replace("@protobuf.version@", protobufVersion)
         newBallerinaToml = newBallerinaToml.replace("@tomcat.annotations.version@", tomcatAnnotationsVersion)
         newBallerinaToml = newBallerinaToml.replace("@guava.version@", guavaVersion)

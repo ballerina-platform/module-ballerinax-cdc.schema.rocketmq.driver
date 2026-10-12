@@ -133,7 +133,7 @@ subprojects {
             transitive = false
         }
 
-        // gRPC (used by rocketmq-client 5.x gRPC mode)
+        // gRPC (used by rocketmq-client 5.x gRPC mode; grpc-netty-shaded >= 1.84 shades Netty 4.2)
         externalJars(group: 'io.grpc', name: 'grpc-api', version: "${grpcVersion}") {
             transitive = false
         }
@@ -147,6 +147,41 @@ subprojects {
             transitive = false
         }
         externalJars(group: 'io.grpc', name: 'grpc-netty-shaded', version: "${grpcVersion}") {
+            transitive = false
+        }
+
+        // Netty (rocketmq-remoting is Netty-based)
+        externalJars(group: 'io.netty', name: 'netty-buffer', version: "${nettyVersion}") {
+            transitive = false
+        }
+        externalJars(group: 'io.netty', name: 'netty-codec-base', version: "${nettyVersion}") {
+            transitive = false
+        }
+        externalJars(group: 'io.netty', name: 'netty-codec-haproxy', version: "${nettyVersion}") {
+            transitive = false
+        }
+        externalJars(group: 'io.netty', name: 'netty-codec-socks', version: "${nettyVersion}") {
+            transitive = false
+        }
+        externalJars(group: 'io.netty', name: 'netty-common', version: "${nettyVersion}") {
+            transitive = false
+        }
+        externalJars(group: 'io.netty', name: 'netty-handler', version: "${nettyVersion}") {
+            transitive = false
+        }
+        externalJars(group: 'io.netty', name: 'netty-handler-proxy', version: "${nettyVersion}") {
+            transitive = false
+        }
+        externalJars(group: 'io.netty', name: 'netty-resolver', version: "${nettyVersion}") {
+            transitive = false
+        }
+        externalJars(group: 'io.netty', name: 'netty-transport', version: "${nettyVersion}") {
+            transitive = false
+        }
+        externalJars(group: 'io.netty', name: 'netty-transport-classes-epoll', version: "${nettyVersion}") {
+            transitive = false
+        }
+        externalJars(group: 'io.netty', name: 'netty-transport-native-unix-common', version: "${nettyVersion}") {
             transitive = false
         }
 
