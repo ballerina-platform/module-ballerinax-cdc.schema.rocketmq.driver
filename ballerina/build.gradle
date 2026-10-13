@@ -17,6 +17,13 @@
  */
 
 import org.apache.tools.ant.taskdefs.condition.Os
+import org.gradle.process.ExecOperations
+
+import javax.inject.Inject
+
+abstract class BallerinaExecHelper {
+    @Inject abstract ExecOperations getExecOperations()
+}
 
 plugins {
     id 'io.ballerina.plugin'
@@ -48,7 +55,8 @@ ballerina {
     packageOrganization = packageOrg
     module = packageName
     langVersion = ballerinaLangVersion
-    isConnector = true
+    connector = true
+    platform = 'java25'
 }
 
 tasks.register('updateTomlFiles') {
@@ -68,6 +76,7 @@ tasks.register('updateTomlFiles') {
         newBallerinaToml = newBallerinaToml.replace("@zstd.jni.version@", zstdJniVersion)
         newBallerinaToml = newBallerinaToml.replace("@lz4.version@", lz4Version)
         newBallerinaToml = newBallerinaToml.replace("@grpc.version@", grpcVersion)
+        newBallerinaToml = newBallerinaToml.replace("@netty.version@", nettyVersion)
         newBallerinaToml = newBallerinaToml.replace("@protobuf.version@", protobufVersion)
         newBallerinaToml = newBallerinaToml.replace("@tomcat.annotations.version@", tomcatAnnotationsVersion)
         newBallerinaToml = newBallerinaToml.replace("@guava.version@", guavaVersion)
@@ -84,8 +93,9 @@ tasks.register('updateTomlFiles') {
 }
 
 tasks.register('commitTomlFiles') {
+    def execHelper = project.objects.newInstance(BallerinaExecHelper)
     doLast {
-        project.exec {
+        execHelper.execOperations.exec {
             ignoreExitValue true
             if (Os.isFamily(Os.FAMILY_WINDOWS)) {
                 commandLine 'cmd', '/c', "git commit -m \"[Automated] Update the toml files\" Ballerina.toml Dependencies.toml"
