@@ -89,8 +89,8 @@ path = "./lib/rocketmq-rocksdb-1.0.3.jar"
 [[platform.java25.dependency]]
 groupId = "com.alibaba"
 artifactId = "fastjson"
-version = "1.2.83"
-path = "./lib/fastjson-1.2.83.jar"
+version = "1.2.84"
+path = "./lib/fastjson-1.2.84.jar"
 
 # Commons utilities (commons-beanutils, commons-collections, gson omitted — present in BRE 2201.12.0)
 [[platform.java25.dependency]]
@@ -133,8 +133,8 @@ path = "./lib/zstd-jni-1.5.2-2.jar"
 [[platform.java25.dependency]]
 groupId = "at.yawk.lz4"
 artifactId = "lz4-java"
-version = "1.8.1"
-path = "./lib/lz4-java-1.8.1.jar"
+version = "1.11.4"
+path = "./lib/lz4-java-1.11.4.jar"
 
 # gRPC (used by rocketmq-client 5.x gRPC transport mode)
 [[platform.java25.dependency]]
