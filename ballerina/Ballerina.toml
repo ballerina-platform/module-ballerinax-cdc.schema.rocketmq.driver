@@ -1,8 +1,8 @@
 [package]
 org = "ballerinax"
 name = "cdc.schema.rocketmq.driver"
-version = "1.1.0"
-distribution = "2201.12.0"
+version = "1.1.1"
+distribution = "2201.13.6"
 authors = ["Ballerina"]
 keywords = ["CDC", "Debezium", "Area/Database", "Type/Driver", "Vendor/Red Hat"]
 repository = "https://github.com/ballerina-platform/module-ballerinax-cdc.schema.rocketmq.driver"
@@ -14,8 +14,8 @@ graalvmCompatible = true
 [[platform.java21.dependency]]
 groupId = "io.ballerina.lib"
 artifactId = "cdc.schema.rocketmq.driver-native"
-version = "1.1.0"
-path = "../native/build/libs/cdc.schema.rocketmq.driver-native-1.1.0.jar"
+version = "1.1.1"
+path = "../native/build/libs/cdc.schema.rocketmq.driver-native-1.1.1-SNAPSHOT.jar"
 
 [[platform.java21.dependency]]
 groupId = "io.debezium"
@@ -89,8 +89,8 @@ path = "./lib/rocketmq-rocksdb-1.0.3.jar"
 [[platform.java21.dependency]]
 groupId = "com.alibaba"
 artifactId = "fastjson"
-version = "1.2.83"
-path = "./lib/fastjson-1.2.83.jar"
+version = "1.2.84"
+path = "./lib/fastjson-1.2.84.jar"
 
 # Commons utilities (commons-beanutils, commons-collections, gson omitted — present in BRE 2201.12.0)
 [[platform.java21.dependency]]
@@ -133,8 +133,8 @@ path = "./lib/zstd-jni-1.5.2-2.jar"
 [[platform.java21.dependency]]
 groupId = "at.yawk.lz4"
 artifactId = "lz4-java"
-version = "1.8.1"
-path = "./lib/lz4-java-1.8.1.jar"
+version = "1.11.4"
+path = "./lib/lz4-java-1.11.4.jar"
 
 # gRPC (used by rocketmq-client 5.x gRPC transport mode)
 [[platform.java21.dependency]]
