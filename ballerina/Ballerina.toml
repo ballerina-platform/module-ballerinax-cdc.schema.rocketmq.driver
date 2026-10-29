@@ -15,7 +15,7 @@ graalvmCompatible = true
 groupId = "io.ballerina.lib"
 artifactId = "cdc.schema.rocketmq.driver-native"
 version = "1.2.0"
-path = "../native/build/libs/cdc.schema.rocketmq.driver-native-1.2.0-SNAPSHOT.jar"
+path = "../native/build/libs/cdc.schema.rocketmq.driver-native-1.2.0.jar"
 
 [[platform.java25.dependency]]
 groupId = "io.debezium"
