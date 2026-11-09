@@ -16,6 +16,8 @@
  * under the License.
  */
 
+import org.gradle.api.attributes.java.TargetJvmEnvironment
+
 plugins {
     id 'com.github.spotbugs-base'
     id 'com.gradleup.shadow'
@@ -63,7 +65,12 @@ def moduleVersion = project.version.replace("-SNAPSHOT", "")
 
 subprojects {
     configurations {
-        externalJars
+        externalJars {
+            // guava 33.x publishes both JRE and Android variants; pick the standard JVM one
+            attributes {
+                attribute(TargetJvmEnvironment.TARGET_JVM_ENVIRONMENT_ATTRIBUTE, objects.named(TargetJvmEnvironment, TargetJvmEnvironment.STANDARD_JVM))
+            }
+        }
     }
 
     dependencies {
